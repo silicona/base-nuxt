@@ -1,0 +1,36 @@
+{
+  "name": "base-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest",
+    "test:wip": "jest --group=wip",
+    "test:list": "jest --no-color 2> ./coverage/resultsTests.txt",
+    "test:list-consoles": "jest --no-color > jestOutputConsole.txt",
+    "test:json": "jest --json --outputFile=jestOutput.json",
+    "test:cov": "jest --coverage=true"
+  },
+  "dependencies": {
+    "core-js": "^3.15.1",
+    "nuxt": "^2.13.3"
+  },
+  "devDependencies": {
+    "@alex_neo/jest-expect-message": "^1.0.5",
+    "@nuxt/test-utils": "^0.2.2",
+    "@vue/devtools": "^5.3.4",
+    "@vue/test-utils": "^1.2.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^27.0.5",
+    "fibers": "^5.0.0",
+    "jest": "^27.0.5",
+    "jest-runner-groups": "^2.1.0",
+    "playwright": "^1.15.2",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.2.0",
+    "vue-jest": "^3.0.4"
+  }
+}
